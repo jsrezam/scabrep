@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace S.C.A.B.R.E.P
@@ -21,6 +15,7 @@ namespace S.C.A.B.R.E.P
         double precio;
         int IdActualizarDataGridView;
         int IdActualizarAyudante;
+
         public FrmProductoActualizar()
         {
             InitializeComponent();
@@ -49,7 +44,7 @@ namespace S.C.A.B.R.E.P
             indiceFiladgv = e.RowIndex;
             try
             {
-                flagSeleccion2 = 1; //CODIGO PRUEBAS                 
+                flagSeleccion2 = 1;                 
                 codigo = dgvBuscarProductoEliminar.Rows[indiceFiladgv].Cells[1].Value.ToString().Trim();
                 nombre = dgvBuscarProductoEliminar.Rows[indiceFiladgv].Cells[2].Value.ToString().Trim();
                 precio = Math.Round(Convert.ToDouble( dgvBuscarProductoEliminar.Rows[indiceFiladgv].Cells[3].Value.ToString()),2);
@@ -69,6 +64,7 @@ namespace S.C.A.B.R.E.P
                 indiceFiladgv = 0;
             }
         }
+
         //RELIZA LA BUSQUEDA DEL PRODUCTO CEGUN CODIGO O NOMBRE(APROXIMACION)
         public void buscar()
         {
@@ -86,16 +82,17 @@ namespace S.C.A.B.R.E.P
                 }
             }
         }
+
         //CONTROLA EL INGRESO DE DATOS
         bool verificarIngreso()
         {
             bool res;
-            if (txtCodigoProductoEliminar.Text == "" && radioButtonOpcion == 1)
+            if (txtCodigoProductoEliminar.Text == string.Empty && radioButtonOpcion == 1)
             {
                 MessageBox.Show("Ingrese el codigo del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
             }
-            else if (txtNombreProductoEliminar.Text == "" && radioButtonOpcion == 2)
+            else if (txtNombreProductoEliminar.Text == string.Empty && radioButtonOpcion == 2)
             {
                 MessageBox.Show("Ingrese el nombre del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
@@ -121,7 +118,6 @@ namespace S.C.A.B.R.E.P
         {
             try
             {
-
                 txtCodigoProducto.Text = codigo.Trim();
                 txtNombreProducto.Text = nombre.Trim();
                 txtCostoProducto.Text = precio.ToString().Trim();
@@ -130,10 +126,12 @@ namespace S.C.A.B.R.E.P
                 MessageBox.Show("No se ha seleccionado ningun producto", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);   
             }
         }
+
         private void btnCancelarIngresarCliente_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
         //ACTUALIZA EL PRODUCTO SEGUN LOS CAMPOS QUE EL USARIO DESEE CAMBIAR
         private void btnActualizarProducto_Click(object sender, EventArgs e)
         {
@@ -170,6 +168,7 @@ namespace S.C.A.B.R.E.P
                 }
             }
         }
+
         //VERIFICA EL INGRESO DE DATOS        
         bool verificarIngreso2()
         {
@@ -178,30 +177,15 @@ namespace S.C.A.B.R.E.P
             {
                 MessageBox.Show("Escoja un producto para actualizar", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
-            }
-            /*else if (txtNombreProducto.Text == "")
-            {
-                MessageBox.Show("Ingrese el nombre del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                res = false;
-            }
-            else if (txtCostoProducto.Text == "")
-            {
-                MessageBox.Show("Ingrese el costo del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                res = false;
-            }
-            else if (txtCodigoProducto.Text == "")
-            //txtCodigoProducto.Text == "" && txtNombreProducto.Text == "" && txtCostoProducto.Text == "" && flagSeleccion == 0
-            {
-                MessageBox.Show("Busque un producto para actualizar", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                res = false; 
-            }*/
+            }            
             else
             {
                 res = true;
             }
-            return res;
 
+            return res;
         }
+
         //VERIFICA EL INGRESO DEL CAMPO COSTO SEGUN SQL-SERVER (.)
         private void txtCostoProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -229,20 +213,21 @@ namespace S.C.A.B.R.E.P
         private void txtCodigoProducto_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoProductoEspecial.Visible = false;
-            lblAvisoCostoProductoEspecial.Text = "";
+            lblAvisoCostoProductoEspecial.Text = string.Empty;
         }
 
         private void txtNombreProducto_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoProductoEspecial.Visible = false;
-            lblAvisoCostoProductoEspecial.Text = "";
+            lblAvisoCostoProductoEspecial.Text = string.Empty;
         }
 
         private void txtDescripcionProducto_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoProductoEspecial.Visible = false;
-            lblAvisoCostoProductoEspecial.Text = "";
+            lblAvisoCostoProductoEspecial.Text = string.Empty;
         }
+
         //REALIZA OTRO CONSULTA CON EL ID PREDETERMIDAO PARA REFRESCAR EL DATAGRIDVIEW
         public void actualizarDataGridView()
         {
@@ -265,13 +250,10 @@ namespace S.C.A.B.R.E.P
 
         private void txtNombreProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-
             if (e.KeyChar == '\'')
             {
                 e.Handled = true;
             }
-
         }
-
     }
 }

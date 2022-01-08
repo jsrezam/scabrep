@@ -1,23 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace S.C.A.B.R.E.P
 {
     public partial class FrmClienteActualizar : Form
     {
-        public FrmClienteActualizar()
-        {
-            InitializeComponent();
-        }
-        Conexiones obconexionesActualizar= new Conexiones();
+        Conexiones obconexionesActualizar = new Conexiones();
         int condicionVerificarIngresoActualizar;
-        int condicionVerificarIngresoActualizarAyudante;
         int Id;
         int IdActualizarDataGridView;
         int IdActualizarAyudante;
@@ -32,13 +21,18 @@ namespace S.C.A.B.R.E.P
 
         int flagSeleccion = 0;
 
+        public FrmClienteActualizar()
+        {
+            InitializeComponent();
+        }        
+
         private void rBtnCedulaActualizar_CheckedChanged(object sender, EventArgs e)
         {
             txtCedulaClienteBuscarActualizar.Enabled = true;
             txtRucClienteBuscarActualizar.Enabled = false;
-            txtRucClienteBuscarActualizar.Text = "";
+            txtRucClienteBuscarActualizar.Text = string.Empty;
             txtNombreClienteBuscarActualizar.Enabled = false;
-            txtNombreClienteBuscarActualizar.Text = "";
+            txtNombreClienteBuscarActualizar.Text = string.Empty;
             condicionVerificarIngresoActualizar = 1;
         }
 
@@ -46,20 +40,19 @@ namespace S.C.A.B.R.E.P
         {
             txtRucClienteBuscarActualizar.Enabled = true;
             txtCedulaClienteBuscarActualizar.Enabled = false;
-            txtCedulaClienteBuscarActualizar.Text = "";
+            txtCedulaClienteBuscarActualizar.Text = string.Empty;
             txtNombreClienteBuscarActualizar.Enabled = false;
-            txtNombreClienteBuscarActualizar.Text = "";
+            txtNombreClienteBuscarActualizar.Text = string.Empty;
             condicionVerificarIngresoActualizar = 2;
         }
-
        
         private void rBtnNombreActualizar_CheckedChanged(object sender, EventArgs e)
         {
             txtNombreClienteBuscarActualizar.Enabled = true;
-            txtCedulaClienteBuscarActualizar.Text = "";
+            txtCedulaClienteBuscarActualizar.Text = string.Empty;
             txtCedulaClienteBuscarActualizar.Enabled = false;
             txtRucClienteBuscarActualizar.Enabled = false;
-            txtRucClienteBuscarActualizar.Text = "";
+            txtRucClienteBuscarActualizar.Text = string.Empty;
             condicionVerificarIngresoActualizar = 3;
         }
 
@@ -69,16 +62,15 @@ namespace S.C.A.B.R.E.P
             lblAvisoCedulaClienteActualizar.Text = "AVISO: Ingrese solamente HASTA 10 DIGITOS";
 
             lblAvisoRucClienteActualizar.Visible = false;
-            lblAvisoRucClienteActualizar.Text = "";
+            lblAvisoRucClienteActualizar.Text = string.Empty;
         }
 
         private void txtRucClienteActualizar_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCedulaClienteActualizar.Visible = false;
-            lblAvisoCedulaClienteActualizar.Text = "";
+            lblAvisoCedulaClienteActualizar.Text = string.Empty;
             lblAvisoRucClienteActualizar.Visible = true;
             lblAvisoRucClienteActualizar.Text = "AVISO: Ingrese solamente HASTA 13 DIGITOS";
-
         }
 
         private void txtCedulaClienteActualizar_KeyPress(object sender, KeyPressEventArgs e)
@@ -118,6 +110,7 @@ namespace S.C.A.B.R.E.P
         {
             buscarClienteActualizar();
         }
+
         public bool verificarIngeso()
         {
             bool resverificarIngeso = true;
@@ -156,10 +149,9 @@ namespace S.C.A.B.R.E.P
         private void txtNombreClienteBuscarActualizar_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCedulaClienteActualizar.Visible = false;
-            lblAvisoCedulaClienteActualizar.Text = "";
+            lblAvisoCedulaClienteActualizar.Text = string.Empty;
             lblAvisoRucClienteActualizar.Visible = false;
-            lblAvisoRucClienteActualizar.Text = "";
-
+            lblAvisoRucClienteActualizar.Text = string.Empty;
         }
 
         private void txtNombreClienteBuscarActualizar_KeyPress(object sender, KeyPressEventArgs e)
@@ -189,12 +181,13 @@ namespace S.C.A.B.R.E.P
                 e.Handled = true;
             }
         }
+
         //evento permite recoger los datos del datagridview segun la fila donde se encuentra y los agrega a los diferentes campos 
         private void dgvBuscarClienteActualizar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indiceFila = 0;
             indiceFila = e.RowIndex;
-            //Me.dgvDocumentos.FirstDisplayedScrollingRowIndex = intFilaSeleccionada
+            
             try
             {
                 txtCedulaClienteActualizarAyudante.Text = dgvBuscarClienteActualizar.Rows[indiceFila].Cells[1].Value.ToString();
@@ -215,7 +208,6 @@ namespace S.C.A.B.R.E.P
                 DireccionPredeterminado = dgvBuscarClienteActualizar.Rows[indiceFila].Cells[7].Value.ToString();
                 MailPredeterminado = dgvBuscarClienteActualizar.Rows[indiceFila].Cells[8].Value.ToString();
 
-                //this.dgvBuscarClienteActualizar.FirstDisplayedScrollingRowIndex = indiceFila;
                 dgvBuscarClienteActualizar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 IdActualizarDataGridView = Convert.ToInt16(dgvBuscarClienteActualizar.Rows[indiceFila].Cells[0].Value);
                 IdActualizarAyudante = Convert.ToInt16(dgvBuscarClienteActualizar.Rows[indiceFila].Cells[0].Value);
@@ -235,16 +227,14 @@ namespace S.C.A.B.R.E.P
         {
             txtCedulaClienteActualizarAyudante.Enabled = true;
             txtRucClienteActualizarAyudante.Enabled = false;
-            txtRucClienteActualizarAyudante.Text = "";
-            condicionVerificarIngresoActualizarAyudante = 1;
+            txtRucClienteActualizarAyudante.Text = string.Empty;            
         }
 
         private void rBtnRucActualizarAyudante_CheckedChanged(object sender, EventArgs e)
         {
             txtCedulaClienteActualizarAyudante.Enabled = false;
             txtRucClienteActualizarAyudante.Enabled = true;
-            txtCedulaClienteActualizarAyudante.Text = "";
-            condicionVerificarIngresoActualizarAyudante = 2;
+            txtCedulaClienteActualizarAyudante.Text = string.Empty;            
         }
 
         private void btnActualizarCliente_Click_1(object sender, EventArgs e)
@@ -355,6 +345,7 @@ namespace S.C.A.B.R.E.P
                 e.Handled = true;
             }
         }
+
         private void txtApellidoClienteActualizarAyudante_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsLetter(e.KeyChar))
@@ -467,6 +458,7 @@ namespace S.C.A.B.R.E.P
                 MessageBox.Show("No se ha seleccionado ningun cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);    
             }
         }
+
         public void buscarClienteActualizar()
         {
             FuncionesComplementarias obFuncionesComplenetariasBuscarActualizar = new FuncionesComplementarias(txtCedulaClienteBuscarActualizar.Text.Trim(), "", txtRucClienteBuscarActualizar.Text.Trim(), "");
@@ -508,6 +500,7 @@ namespace S.C.A.B.R.E.P
                 }
             }
         }
+
         public void actualizarDataGridView()
         {
             obconexionesActualizar.consultar("Select * from CLIENTE WHERE ID_CLIENTE='" + IdActualizarDataGridView + "'", "CLIENTE");
@@ -518,8 +511,7 @@ namespace S.C.A.B.R.E.P
         private void button2_Click(object sender, EventArgs e)
         {
             obconexionesActualizar.consultar("SELECT * FROM CLIENTE", "CLIENTE");
-            dgvBuscarClienteActualizar.DataSource = obconexionesActualizar.dataset.Tables["CLIENTE"];
-            
+            dgvBuscarClienteActualizar.DataSource = obconexionesActualizar.dataset.Tables["CLIENTE"];            
         }
 
         private void txtDireccionClienteActualizarAyudante_KeyPress(object sender, KeyPressEventArgs e)

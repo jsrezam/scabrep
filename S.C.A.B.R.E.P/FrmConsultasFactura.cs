@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace S.C.A.B.R.E.P
@@ -31,81 +26,76 @@ namespace S.C.A.B.R.E.P
         {
             txtCedulaCliente.Enabled = true;
             txtRucCliente.Enabled = false;
-            txtRucCliente.Text = "";
+            txtRucCliente.Text = string.Empty;
             txtNombreCliente.Enabled = false;
-            txtNombreCliente.Text = "";
+            txtNombreCliente.Text = string.Empty;
             txtNumFactura.Enabled = false;
-            txtNumFactura.Text = "";
+            txtNumFactura.Text = string.Empty;
 
             lblAvisoNombre.Visible = false;
             this.gbFechas.Enabled = false;
             condicionVerificarIngresoEliminar = 1;
-
         }
 
         private void rBtnRuc_CheckedChanged(object sender, EventArgs e)
         {
             txtCedulaCliente.Enabled = false;
-            txtCedulaCliente.Text = "";
+            txtCedulaCliente.Text = string.Empty;
             txtRucCliente.Enabled = true;
-            txtRucCliente.Text = "";
+            txtRucCliente.Text = string.Empty;
             txtNombreCliente.Enabled = false;
-            txtNombreCliente.Text = "";
+            txtNombreCliente.Text = string.Empty;
             txtNumFactura.Enabled = false;
-            txtNumFactura.Text = "";
+            txtNumFactura.Text = string.Empty;
             lblAvisoNombre.Visible = false;
             this.gbFechas.Enabled = false;
             condicionVerificarIngresoEliminar = 2;
-
         }
 
         private void rBtnNombre_CheckedChanged(object sender, EventArgs e)
         {
             txtNombreCliente.Enabled = true;
             txtCedulaCliente.Enabled = false;
-            txtCedulaCliente.Text = "";
+            txtCedulaCliente.Text = string.Empty;
             txtRucCliente.Enabled = false;
-            txtRucCliente.Text = "";
+            txtRucCliente.Text = string.Empty;
             txtNumFactura.Enabled = false;
-            txtNumFactura.Text = "";
+            txtNumFactura.Text = string.Empty;
 
             lblAvisoNombre.Visible = true;
             this.gbFechas.Enabled = false;
             condicionVerificarIngresoEliminar = 3;
-
         }
 
         private void rbtnNumeroFactura_CheckedChanged(object sender, EventArgs e)
         {
             txtNumFactura.Enabled = true;
-            txtNumFactura.Text = "";
-            txtCedulaCliente.Text = "";
-            txtRucCliente.Text = "";
-            txtNombreCliente.Text = "";
+            txtNumFactura.Text = string.Empty;
+            txtCedulaCliente.Text = string.Empty;
+            txtRucCliente.Text = string.Empty;
+            txtNombreCliente.Text = string.Empty;
             txtCedulaCliente.Enabled = false;
             txtRucCliente.Enabled = false;
             txtNombreCliente.Enabled = false;
             lblAvisoNombre.Visible = false;
             this.gbFechas.Enabled = false;
             condicionVerificarIngresoEliminar = 4;
-
         }
 
         private void rBtnFechas_CheckedChanged(object sender, EventArgs e)
         {
             this.gbFechas.Enabled = true;
 
-            txtNumFactura.Text = "";
-            txtCedulaCliente.Text = "";
-            txtRucCliente.Text = "";
-            txtNombreCliente.Text = "";
+            txtNumFactura.Text = string.Empty;
+            txtCedulaCliente.Text = string.Empty;
+            txtRucCliente.Text = string.Empty;
+            txtNombreCliente.Text = string.Empty;
             txtNumFactura.Enabled = false;
             txtCedulaCliente.Enabled = false;
             txtRucCliente.Enabled = false;
             txtNombreCliente.Enabled = false;
             lblAvisoNombre.Visible = false;
             condicionVerificarIngresoEliminar = 5;
-
         }
 
         private void txtCedulaClienteEliminar_TextChanged(object sender, EventArgs e)
@@ -113,13 +103,13 @@ namespace S.C.A.B.R.E.P
             lblAvisoCedulaCliente.Visible = true;
             lblAvisoCedulaCliente.Text = "AVISO: Ingrese solamente HASTA 10 DIGITOS";
             lblAvisoRucCliente.Visible = false;
-            lblAvisoRucCliente.Text = "";
+            lblAvisoRucCliente.Text = string.Empty;
         }
 
         private void txtRucClienteEliminar_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCedulaCliente.Visible = false;
-            lblAvisoCedulaCliente.Text = "";
+            lblAvisoCedulaCliente.Text = string.Empty;
             lblAvisoRucCliente.Visible = true;
             lblAvisoRucCliente.Text = "AVISO: Ingrese solamente HASTA 13 DIGITOS";
         }
@@ -138,7 +128,6 @@ namespace S.C.A.B.R.E.P
             {
                 e.Handled = true;
             }
-
         }
 
         private void txtRucClienteEliminar_KeyPress(object sender, KeyPressEventArgs e)
@@ -161,25 +150,25 @@ namespace S.C.A.B.R.E.P
         {
             bool resverificarIngeso = true;
             //verifica si la Cedula esta en blanco
-            if (txtCedulaCliente.Text == "" && condicionVerificarIngresoEliminar == 1)
+            if (txtCedulaCliente.Text == string.Empty && condicionVerificarIngresoEliminar == 1)
             {
                 MessageBox.Show("Ingrese Cédula del Cliente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 resverificarIngeso = false;
             }
             //verifica si el RUC esta en blanco
-            else if (txtRucCliente.Text == "" && condicionVerificarIngresoEliminar == 2)
+            else if (txtRucCliente.Text == string.Empty && condicionVerificarIngresoEliminar == 2)
             {
                 MessageBox.Show("Ingrese Ruc del Cliente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 resverificarIngeso = false;
             }
             //verifica si el nombre esta en blanco
-            else if (txtNombreCliente.Text == "" && condicionVerificarIngresoEliminar == 3)
+            else if (txtNombreCliente.Text == string.Empty && condicionVerificarIngresoEliminar == 3)
             {
                 MessageBox.Show("Ingrese Nombre/Apellido del Cliente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 resverificarIngeso = false;
             }
             //verifica si el nunmero de factura esta en blanco
-            else if (txtNumFactura.Text == "" && condicionVerificarIngresoEliminar == 4)
+            else if (txtNumFactura.Text == string.Empty && condicionVerificarIngresoEliminar == 4)
             {
                 MessageBox.Show("Ingrese Numero de la Factura ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 resverificarIngeso = false;
@@ -194,6 +183,7 @@ namespace S.C.A.B.R.E.P
             {
                 resverificarIngeso = true;
             }
+
             return resverificarIngeso;
         }
 
@@ -237,8 +227,8 @@ namespace S.C.A.B.R.E.P
                         }
                         if (condicionVerificarIngresoEliminar == 5)
                         {
-                            ayudanteFechaInicial = dtpIncial.Value.Date.ToString().Trim();
-                            ayudanteFechaFinal = dtpFinal.Value.Date.ToString().Trim();
+                            ayudanteFechaInicial = dtpIncial.Value.Date.ToString("yyyy-MM-dd").Trim();
+                            ayudanteFechaFinal = dtpFinal.Value.Date.ToString("yyyy-MM-dd").Trim();
                             obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA] from FACTURA A where A.FECHA_FACTURA BETWEEN '" + ayudanteFechaInicial + "' AND '"+ayudanteFechaFinal+"'", "FACTURA A");
                             this.dgvBuscarCliente.DataSource = obconexionesEliminar.dataset.Tables["FACTURA A"];
                             this.dgvBuscarCliente.Refresh();
@@ -269,14 +259,12 @@ namespace S.C.A.B.R.E.P
                 dgvBuscarCliente.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 Id = Convert.ToInt16(dgvBuscarCliente.Rows[indiceFiladgv].Cells[0].Value);
                 numeroFactura = Convert.ToInt32(dgvBuscarCliente.Rows[indiceFiladgv].Cells[0].Value.ToString());
-
             }
             catch (ArgumentOutOfRangeException)
             {
                 indiceFiladgv = 0;
                 ayudanteAnularIndice = 0;
-            }
-            
+            }            
         }
 
         private void btnBucarCliente_Click(object sender, EventArgs e)
@@ -287,8 +275,6 @@ namespace S.C.A.B.R.E.P
         }
         private void btnBuscarIngresarCliente_Click_1(object sender, EventArgs e)
         {
-            //fbiCliente.Dispose();
-            //fbiCliente.Show();
             fbiCliente.ShowDialog();
             lblAvisoNuevoIngreso.Visible = true;
             lblAvisoNuevoIngreso.Text = "Busque el nuevo Cliente Ingresado -->";
@@ -297,17 +283,14 @@ namespace S.C.A.B.R.E.P
 
         private void btnBuscarActualizarCliente_Click(object sender, EventArgs e)
         {
-            //fbaCliente.Dispose();
-            //fbaCliente.Show();
             fbaCliente.ShowDialog();
             BuscarEliminar();
-
         }
 
         private void txtNombreCliente_TextChanged(object sender, EventArgs e)
         {
-            lblAvisoRucCliente.Text = "";
-            lblAvisoCedulaCliente.Text = "";
+            lblAvisoRucCliente.Text = string.Empty;
+            lblAvisoCedulaCliente.Text = string.Empty;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -477,8 +460,7 @@ namespace S.C.A.B.R.E.P
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-           
+        {           
             if (dgvBuscarCliente.RowCount != 0)
             {
                 string temp = dgvBuscarCliente.Rows[ayudanteAnularIndice].Cells[8].Value.ToString();
@@ -506,24 +488,12 @@ namespace S.C.A.B.R.E.P
             }
             else {
                 MessageBox.Show("Debe ejecutar una busqueda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);   
-            }
-            
+            }            
         }
 
         public void anularFactura(int numFacturaAnular)
         {
             obconexionesEliminar.actualizar("FACTURA", "[SUBTOTALDOCEPORCIENTO_FACTURA] = " + 0 + ",[SUBTOTALCEROPORCIENTO_FACTURA]= " + 0 + ",[DESCUENTO_FACTURA]=" + 0 + ",[SUBTOTAL_FACTURA]=" + 0 + ",[IVA_FACTURA]=" + 0 + ",[TOTAL_FACTURA]=" + 0 + ",[ESTADO_FACTURA]='ANULADA'", " NUMERO_FACTURA= " + numFacturaAnular);
         }
-        
-        
-
-
-
-
-
-
-
-
-
     }
 }

@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace S.C.A.B.R.E.P
@@ -40,21 +34,22 @@ namespace S.C.A.B.R.E.P
             }
 
         }
+
         //VERIFICA EL INGRESO DE DATOS
         bool verificarIngreso()
         {
             bool res;
-            if (txtCodigoTrabajo.Text == "")
+            if (txtCodigoTrabajo.Text == string.Empty)
             {
                 MessageBox.Show("Ingrese el codigo del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
             }
-            else if (txtNombreTrabajo.Text == "")
+            else if (txtNombreTrabajo.Text == string.Empty)
             {
                 MessageBox.Show("Ingrese el nombre del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
             }
-            else if (txtCostoTrabajo.Text == "")
+            else if (txtCostoTrabajo.Text == string.Empty)
             {
                 MessageBox.Show("Ingrese el costo del producto", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 res = false;
@@ -66,6 +61,7 @@ namespace S.C.A.B.R.E.P
             return res;
 
         }
+
         private void btnSalirTrabajo_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -74,20 +70,21 @@ namespace S.C.A.B.R.E.P
         private void txtCodigoTrabajo_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoTrabajo.Visible = false;
-            lblAvisoCostoTrabajo.Text = ""; 
+            lblAvisoCostoTrabajo.Text = string.Empty; 
         }
 
         private void txtNombreTrabajo_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoTrabajo.Visible = false;
-            lblAvisoCostoTrabajo.Text = "";
+            lblAvisoCostoTrabajo.Text = string.Empty;
         }
 
         private void txtDescripcionTrabajo_TextChanged(object sender, EventArgs e)
         {
             lblAvisoCostoTrabajo.Visible = false;
-            lblAvisoCostoTrabajo.Text = ""; 
+            lblAvisoCostoTrabajo.Text = string.Empty; 
         }
+        
         //VERIFICA EL INGRESO DE DECIMALES SEGÚN SQL-SERVER (.)
         private void txtCostoTrabajo_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -101,7 +98,6 @@ namespace S.C.A.B.R.E.P
             {
                 e.Handled = false;
             }
-
             else if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -110,7 +106,6 @@ namespace S.C.A.B.R.E.P
             {
                 e.Handled = true;
             }
-
         }
     }
 }

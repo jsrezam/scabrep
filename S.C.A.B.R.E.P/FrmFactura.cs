@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Configuration.Assemblies;
-using System.Configuration;
-using System.Globalization;
 
 namespace S.C.A.B.R.E.P
 {
@@ -30,26 +22,22 @@ namespace S.C.A.B.R.E.P
         public string cedulaFacturaUsuario;
         public string nombreFacturaUsuario;
         public string apellidoFacturaUsuario;
-
-        public string passwordFacturaUsuario;
-        
+        public string passwordFacturaUsuario;        
 
         public FrmFactura(string nombreFacturaUsuario, string passwordFacturaUsuario)
         {
             InitializeComponent();
             this.nombreFacturaUsuario = nombreFacturaUsuario;
-            this.passwordFacturaUsuario = passwordFacturaUsuario;
- 
+            this.passwordFacturaUsuario = passwordFacturaUsuario; 
         }
+
         private void FrmFactura_Load(object sender, EventArgs e)
         {
-            //DateTime dt = new DateTime();
-            //this.dtpFechaFactura.Value = dt.Date;
-            //this.dtpFechaFactura.Value.
             consultarNumeroFactura();
             txtIdUsuarioFactura.Text = "" + Convert.ToInt32(facuraConexion.consultar2("USUARIO", nombreFacturaUsuario, passwordFacturaUsuario).Rows[0][0]);
             txtNombreUsuarioFactura.Text = facuraConexion.consultar2("USUARIO", nombreFacturaUsuario, passwordFacturaUsuario).Rows[0][2].ToString() +" "+ facuraConexion.consultar2("USUARIO", nombreFacturaUsuario, passwordFacturaUsuario).Rows[0][3].ToString();
         }
+
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
             FrmBuscarCliente fbuscarCliente = new FrmBuscarCliente();
@@ -72,9 +60,9 @@ namespace S.C.A.B.R.E.P
                 txtTelefonoClienteFactura.Text = TelefonoCelularFacturaCliente.Trim() + " / " + TelefonoFijoFacturaCliente.Trim();
                 txtCedulaClienteFactura.Text = cedulaFacturaCliente.Trim();
                 txtRucClienteFactura.Text = rucFacturaCliente.Trim();
-            }
-                       
+            }                       
         }
+
         private void btnBuscarUsuario_Click(object sender, EventArgs e)
         {
             FrmBuscarUsuario fbuscarUsuario = new FrmBuscarUsuario();
@@ -89,8 +77,8 @@ namespace S.C.A.B.R.E.P
                 txtIdUsuarioFactura.Text = "" + IdFacturaUsuario;
                 txtNombreUsuarioFactura.Text = nombreFacturaUsuario + " " + apellidoFacturaUsuario;
             }
-
         }
+
         private void dgvProductoFactura_MouseClick(object sender, MouseEventArgs e)
         {
             if (dgvProductoFactura.RowCount != 0)
@@ -119,7 +107,7 @@ namespace S.C.A.B.R.E.P
                     dgvProductoFactura.Rows.Add();
                     for (int j = 0; j <= fbuscarProducto.dgvSeleccion.ColumnCount - 1; j++)
                     {
-                        dgvProductoFactura.Rows[i].Cells[j].Value = fbuscarProducto.dgvSeleccion.Rows[i].Cells[j].Value;
+                        dgvProductoFactura.Rows[i].Cells[j].Value = fbuscarProducto.dgvSeleccion.Rows[i].Cells[j].Value;                        
                     }
                 }
             }
@@ -127,34 +115,39 @@ namespace S.C.A.B.R.E.P
             {
                 fbuscarProducto.Close();   
             }
+
             calcular();
         }
+
         private void btnLimpiarProducto_Click(object sender, EventArgs e)
         {
             dgvProductoFactura.Rows.Clear();
-            txtSubTotalDoce.Text = "";
-            txtSubTotalCero.Text = "";
-            txtDescuento.Text = "";
-            txtSubTotal.Text = "";
-            txtIVA.Text = "";
-            txtValorTotal.Text = "";
+            txtSubTotalDoce.Text = string.Empty;
+            txtSubTotalCero.Text = string.Empty;
+            txtDescuento.Text = string.Empty;
+            txtSubTotal.Text = string.Empty;
+            txtIVA.Text = string.Empty;
+            txtValorTotal.Text = string.Empty;
+
             calcular();
         }
+
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             calcular();
         }
+
         //calcula los detalle en la fatura
         public void calcular()
         {
             double sumaProducto = 0;
             double sumaEspecial = 0;
-            double sumaTrabajo = 0;
-            double subTotalDoce;
+            double sumaTrabajo = 0;            
+            double subTotalDoce = 0;
             double subTotalCero = 0;
             double Descuento = 0;
-            double subTotal;
-            double IVA;
+            double subTotal = 0;
+            double IVA = 0;
             double valorTotal;
             //Verfica si todas los datagridViewEstan Vacios para realizar el calculo de la factura
             if (dgvProductoFactura.RowCount != 0)
@@ -168,32 +161,22 @@ namespace S.C.A.B.R.E.P
 
                     }
                 }
-                subTotalDoce = Math.Round(sumaProducto + sumaEspecial + sumaTrabajo, 2);
-                txtSubTotalDoce.Text = "" + subTotalDoce;
-                txtSubTotalCero.Text = "" + subTotalCero;
-                txtDescuento.Text = "" + Descuento;
-                subTotal = subTotalDoce;
-                txtSubTotal.Text = "" + subTotal;
 
-                string sep = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
-
-
-
-                //IVA = Math.Round((subTotal * 0.12), 2);
-                var ivaParm = Convert.ToDouble(ConfigurationManager.AppSettings["IVA"]);
-                IVA = Math.Round((subTotal * ivaParm), 2);
-                                   
-                
-                txtIVA.Text = "" + IVA;
+                subTotal = Math.Round(sumaProducto + sumaEspecial + sumaTrabajo, 2);
+                txtSubTotalDoce.Text = subTotalDoce.ToString();
+                txtSubTotalCero.Text = subTotalCero.ToString();
+                txtDescuento.Text = Descuento.ToString();                
+                txtSubTotal.Text = subTotal.ToString();              
+                txtIVA.Text = IVA.ToString();
                 valorTotal = Math.Round(subTotal + IVA, 2);
-                txtValorTotal.Text = "" + valorTotal;
+                txtValorTotal.Text = valorTotal.ToString();
             }
             else
             {
                 MessageBox.Show("Debe Ingresar detalles", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }           
         }
-
+        
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Conexiones conexionDetalleProducto = new Conexiones();
@@ -254,11 +237,10 @@ namespace S.C.A.B.R.E.P
                 else 
                 {
                     MessageBox.Show("Falta determinar valores estos pueden ser:\nCliente,Usuario ó falta Calcular los Delalles de la factura.Por favor verifique","Atencion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-                }
-                
+                }                
             }
-
         }
+        
         //METODO DEDICADO AL INGRESO DE LOS DATOS QUE NECESITA LA TABLA FACTURA
         public void IngresarFactura()
         {
@@ -272,57 +254,50 @@ namespace S.C.A.B.R.E.P
                 conexionFactura.ingresoFactura(Convert.ToInt32(dgvNumeroFactura.Rows[0].Cells[0].Value), Convert.ToInt32(txtIdClienteFactura.Text.Trim()), Convert.ToInt32(txtIdUsuarioFactura.Text.Trim()), dtpFechaFactura.Value, Convert.ToDouble(txtSubTotalDoce.Text.Trim()), Convert.ToDouble(txtSubTotalCero.Text.Trim()), Convert.ToDouble(txtDescuento.Text.Trim()), Convert.ToDouble(txtSubTotal.Text.Trim()), Convert.ToDouble(txtIVA.Text.Trim()), Convert.ToDouble(txtValorTotal.Text.Trim()), "ACTIVA"); 
             }
         }
+        
         //METOD QUE VERIFICA SI SE HAN REALIZADO LOS CALCULOS 
         bool ComprobarValorfinal() 
         {
             bool res=true;
-            if (txtValorTotal.Text=="")
-            {
+            if (txtValorTotal.Text.Equals(string.Empty))
                 res = false;
-            }
+            
             return res;
         }
+        
         //METODO QUE VERIFICA SI SE HA INGRESADO EL CLIENTE Y EL USUARIO
         bool ComprobarClienteUsuario() 
         {
             bool res=true;
-            if (txtIdClienteFactura.Text == "")
-            {
+            if (txtIdClienteFactura.Text.Equals(string.Empty))
+                res = false;            
+            else if (txtIdUsuarioFactura.Text.Equals(string.Empty))
                 res = false;
-            }
-            else if (txtIdUsuarioFactura.Text == "")
-            {
-                res = false;
-            }
             else
-            {
                 res = true;
-            }
+            
             return res;
         }
+        
         //funcion que limpia todo el formulario factura
         private void limpiar()
         {
-            //text box Cliente
-            txtIdClienteFactura.Text = "";
-            txtNombreClienteFactura.Text = "";
-            txtDireccionClienteFactura.Text = "";
-            txtTelefonoClienteFactura.Text = "";
-            txtCedulaClienteFactura.Text = "";
-            txtRucClienteFactura.Text = "";
-            //text box Usuario
-            //txtIdUsuarioFactura.Text = "";
-            //txtNombreUsuarioFactura.Text = ""; 
-            //txt box factura
-            txtSubTotalDoce.Text = "";
-            txtSubTotalCero.Text = "";
-            txtDescuento.Text = "";
-            txtSubTotal.Text = "";
-            txtIVA.Text = "";
-            txtValorTotal.Text = "";
+            txtIdClienteFactura.Text = string.Empty;
+            txtNombreClienteFactura.Text = string.Empty;
+            txtDireccionClienteFactura.Text = string.Empty;
+            txtTelefonoClienteFactura.Text = string.Empty;
+            txtCedulaClienteFactura.Text = string.Empty;
+            txtRucClienteFactura.Text = string.Empty;
+            txtSubTotalDoce.Text = string.Empty;
+            txtSubTotalCero.Text = string.Empty;
+            txtDescuento.Text = string.Empty;
+            txtSubTotal.Text = string.Empty;
+            txtIVA.Text = string.Empty;
+            txtValorTotal.Text = string.Empty;
             //datagridview
             dgvProductoFactura.Rows.Clear();
         }
+        
         //consulta el proximo numero de factura
         public void consultarNumeroFactura()
         {
@@ -368,19 +343,16 @@ namespace S.C.A.B.R.E.P
             limpiar();
             consultarNumeroFactura();
             btnBuscarCliente.Enabled = true;
-            //btnBuscarUsuario.Enabled = true;
             btnAgregarModificarProductoFactura.Enabled = true;
             btnLimpiarProducto.Enabled = true;
             btnGuardar.Enabled = true;
             btnImprimirFactura.Enabled = false;
             btnNueva.Enabled = false;
-
         }
 
         private void dgvProductoFactura_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
             calcular();
         }
-
     }
 }

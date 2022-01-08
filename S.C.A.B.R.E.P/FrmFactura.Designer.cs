@@ -253,7 +253,7 @@ namespace S.C.A.B.R.E.P
             this.dtpFechaFactura.Name = "dtpFechaFactura";
             this.dtpFechaFactura.Size = new System.Drawing.Size(195, 20);
             this.dtpFechaFactura.TabIndex = 1;
-            this.dtpFechaFactura.Value = new System.DateTime(2013, 8, 5, 20, 29, 50, 0);
+            this.dtpFechaFactura.Value = new System.DateTime(2022, 1, 7, 0, 0, 0, 0);
             // 
             // dgvNumeroFactura
             // 
@@ -500,6 +500,7 @@ namespace S.C.A.B.R.E.P
             this.txtIVA.Size = new System.Drawing.Size(134, 21);
             this.txtIVA.TabIndex = 23;
             this.txtIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtIVA.Visible = false;
             // 
             // txtSubTotal
             // 
@@ -518,10 +519,10 @@ namespace S.C.A.B.R.E.P
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(6, 128);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(50, 13);
+            this.label19.Size = new System.Drawing.Size(30, 13);
             this.label19.TabIndex = 21;
-            //this.label19.Text = "IVA 12%:";
-            this.label19.Text = "IVA " + ConfigurationManager.AppSettings["IVAETIQUETA"] + ":";
+            this.label19.Text = "IVA :";
+            this.label19.Visible = false;
             // 
             // label20
             // 
@@ -543,6 +544,7 @@ namespace S.C.A.B.R.E.P
             this.txtDescuento.Size = new System.Drawing.Size(134, 21);
             this.txtDescuento.TabIndex = 19;
             this.txtDescuento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDescuento.Visible = false;
             // 
             // txtSubTotalCero
             // 
@@ -555,6 +557,7 @@ namespace S.C.A.B.R.E.P
             this.txtSubTotalCero.Size = new System.Drawing.Size(134, 21);
             this.txtSubTotalCero.TabIndex = 18;
             this.txtSubTotalCero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubTotalCero.Visible = false;
             // 
             // label16
             // 
@@ -564,6 +567,7 @@ namespace S.C.A.B.R.E.P
             this.label16.Size = new System.Drawing.Size(62, 13);
             this.label16.TabIndex = 17;
             this.label16.Text = "Descuento:";
+            this.label16.Visible = false;
             // 
             // label17
             // 
@@ -573,17 +577,17 @@ namespace S.C.A.B.R.E.P
             this.label17.Size = new System.Drawing.Size(76, 13);
             this.label17.TabIndex = 16;
             this.label17.Text = "Sub Total 0%::";
+            this.label17.Visible = false;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(6, 21);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 13);
+            this.label18.Size = new System.Drawing.Size(59, 13);
             this.label18.TabIndex = 15;
-            //this.label18.Text = "Sub Total 12%:";
-            this.label18.Text = "Sub Total " + ConfigurationManager.AppSettings["IVAETIQUETA"] + ":";
-            
+            this.label18.Text = "Sub Total :";
+            this.label18.Visible = false;
             // 
             // txtSubTotalDoce
             // 
@@ -596,6 +600,7 @@ namespace S.C.A.B.R.E.P
             this.txtSubTotalDoce.Size = new System.Drawing.Size(134, 21);
             this.txtSubTotalDoce.TabIndex = 14;
             this.txtSubTotalDoce.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubTotalDoce.Visible = false;
             // 
             // btnGuardar
             // 
@@ -625,6 +630,7 @@ namespace S.C.A.B.R.E.P
             this.btnImprimirFactura.TabIndex = 23;
             this.btnImprimirFactura.Text = "Imprimir Factura";
             this.btnImprimirFactura.UseVisualStyleBackColor = true;
+            this.btnImprimirFactura.Visible = false;
             this.btnImprimirFactura.Click += new System.EventHandler(this.btnImprimirFactura_Click);
             // 
             // btnNueva

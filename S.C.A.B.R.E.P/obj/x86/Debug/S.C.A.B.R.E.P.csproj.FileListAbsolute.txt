@@ -115,7 +115,6 @@ C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.
 C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.GenerateResource.Cache
 C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
 C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
-C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.AssemblyReference.cache
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmConsultasFactura.resources

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using S.C.A.B.R.E.P.Properties;
-using System.Configuration; 
 
 namespace S.C.A.B.R.E.P
 {

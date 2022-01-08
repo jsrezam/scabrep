@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using InputKey;
-
+using S.C.A.B.R.E.P.Comun;
 
 namespace S.C.A.B.R.E.P
 {
     public partial class FrmProducto : Form
     {
+        Conexiones objetoconexion = new Conexiones();
+        int rbtnEleccion;
+
         public FrmProducto()
         {
             InitializeComponent();
         }
-        Conexiones objetoconexion = new Conexiones();
-        int rbtnEleccion;
+        
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
             if (verificarIngreso())
@@ -44,6 +40,7 @@ namespace S.C.A.B.R.E.P
 
             }
         }
+
         bool  verificarIngreso() 
         {
             bool res;
@@ -71,37 +68,42 @@ namespace S.C.A.B.R.E.P
             {
                 res = true;
             }
-            return res;
 
+            return res;
         }
+
         private void rbtnCodigo_CheckedChanged(object sender, EventArgs e)
         {
             txtCodigo.Enabled = true;
             txtNombre.Enabled = false;
-            txtNombre.Text = "";
+            txtNombre.Text = string.Empty;
             rbtnEleccion = 1;
         }
+
         private void rbtnNombre_CheckedChanged(object sender, EventArgs e)
         {
             txtCodigo.Enabled = false;
-            txtCodigo.Text = "";
+            txtCodigo.Text = string.Empty;
             txtNombre.Enabled = true;
             rbtnEleccion = 2;
         }
+
         private void rbtnCodigoNombre_CheckedChanged(object sender, EventArgs e)
         {
-            txtCodigo.Text = "";
-            txtNombre.Text = "";
+            txtCodigo.Text = string.Empty;
+            txtNombre.Text = string.Empty;
             txtCodigo.Enabled = true;
             txtNombre.Enabled = true;
             rbtnEleccion = 3;
         }
+
         private void btnBuscarTodos_Click_1(object sender, EventArgs e)
         {
             objetoconexion.consultar("SELECT * FROM PRODUCTO", "PRODUCTO");
             dgvBusqueda.DataSource = objetoconexion.dataset.Tables["PRODUCTO"];
 
         }
+
         private void dgvBusqueda_MouseClick(object sender, MouseEventArgs e)
         {
             if (dgvBusqueda.RowCount != 0)
@@ -110,6 +112,7 @@ namespace S.C.A.B.R.E.P
                 txtMostrarCodigo.Text = dgvBusqueda.CurrentRow.Cells[1].Value.ToString().Trim();
             }
         }
+
         private void dgvBusqueda_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             try
@@ -117,21 +120,25 @@ namespace S.C.A.B.R.E.P
                 if (dgvBusqueda.Rows.Count != 0)
                 {
                     int cantidad = Convert.ToInt32(InputDialog.mostrar("Cuantos desea:", "CANTIDAD", InputDialog.ACEPTAR_BOTON, InputDialog.MENSAJE_PREGUNTA));
-                    //double porcentajeGanancia = (Convert.ToDouble(InputDialog.mostrar("Ingrese Porcentaje de Ganancia:", "GANANCIA", InputDialog.ACEPTAR_BOTON, InputDialog.MENSAJE_PREGUNTA)) / 100);
-                    double porcentajeGanancia = 0;//CODIGO PRUEBA
+                    
+                    double porcentajeGanancia = 0;
                     if (cantidad > 0 && porcentajeGanancia >= 0)
                     {
                         double ganancia;
                         double importe;
                         double importeFinal;
                         string valorUnitario;
-                        valorUnitario = dgvBusqueda.CurrentRow.Cells[3].Value.ToString().Trim();
+
+                        var valorUnitarioSinIVA = Math.Round(Convert.ToDouble(dgvBusqueda.CurrentRow.Cells[3].Value.ToString().Trim()), 2);
+                        valorUnitario = (valorUnitarioSinIVA + (valorUnitarioSinIVA * Util.ObtenerParametroIVA())).ToString();
+
                         importe = Math.Round(Convert.ToDouble(valorUnitario) * cantidad, 2);
                         ganancia = Math.Round(importe * porcentajeGanancia, 2);
                         importeFinal = importe + ganancia;
+
                         if (verificarIdDatagrid())
                         {
-                            dgvSeleccion.Rows.Add(dgvBusqueda.CurrentRow.Cells[0].Value, dgvBusqueda.CurrentRow.Cells[1].Value, cantidad, dgvBusqueda.CurrentRow.Cells[2].Value, dgvBusqueda.CurrentRow.Cells[3].Value, porcentajeGanancia, importeFinal);
+                            dgvSeleccion.Rows.Add(dgvBusqueda.CurrentRow.Cells[0].Value, dgvBusqueda.CurrentRow.Cells[1].Value, cantidad, dgvBusqueda.CurrentRow.Cells[2].Value, valorUnitario, porcentajeGanancia, importeFinal);
                         }
                         else
                         {
@@ -174,6 +181,7 @@ namespace S.C.A.B.R.E.P
             }
             return res;
         }
+
         private void dgvSeleccion_MouseClick(object sender, MouseEventArgs e)
         {
             if (dgvSeleccion.RowCount != 0)
@@ -182,6 +190,7 @@ namespace S.C.A.B.R.E.P
                 txtMostrarCodigo.Text = dgvSeleccion.CurrentRow.Cells[1].Value.ToString().Trim();
             }
         }
+
         private void dgvSeleccion_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             try
@@ -189,8 +198,8 @@ namespace S.C.A.B.R.E.P
                 if (dgvSeleccion.Rows.Count != 0)
                 {
                     int cantidad = Convert.ToInt32(InputDialog.mostrar("Cuantos desea:", "CANTIDAD", InputDialog.ACEPTAR_BOTON, InputDialog.MENSAJE_PREGUNTA));
-                    //double porcentajeGanancia = (Convert.ToDouble(InputDialog.mostrar("Ingrese Porcentaje de Ganancia:", "GANANCIA", InputDialog.ACEPTAR_BOTON, InputDialog.MENSAJE_PREGUNTA))) / 100;
-                    double porcentajeGanancia = 0;//CODIGO PRUEBA
+                    
+                    double porcentajeGanancia = 0;
                     double ganancia;
                     double importe;
                     double importeFinal;
@@ -231,7 +240,5 @@ namespace S.C.A.B.R.E.P
             FrmTrabajoActualizar fTrabajoActualizar = new FrmTrabajoActualizar();
             fTrabajoActualizar.ShowDialog();
         }
-
-
     }
 }
