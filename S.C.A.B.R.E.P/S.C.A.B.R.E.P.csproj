@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D602DAA-14D5-45F2-B599-DEFC636FAD89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>S.C.A.B.R.E.P</RootNamespace>
+    <AssemblyName>S.C.A.B.R.E.P</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="InputKey">
+      <HintPath>..\..\..\..\..\Desktop\InputKey.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexiones.cs" />
+    <Compile Include="FrmBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarCliente.Designer.cs">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarUsuario.Designer.cs">
+      <DependentUpon>FrmBuscarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultasFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultasFactura.Designer.cs">
+      <DependentUpon>FrmConsultasFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.cs">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProducto.Designer.cs">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoActualizar.Designer.cs">
+      <DependentUpon>FrmProductoActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoEliminar.Designer.cs">
+      <DependentUpon>FrmProductoEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoIngresar.Designer.cs">
+      <DependentUpon>FrmProductoIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteActualizar.Designer.cs">
+      <DependentUpon>FrmClienteActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteEliminar.Designer.cs">
+      <DependentUpon>FrmClienteEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteIngresar.Designer.cs">
+      <DependentUpon>FrmClienteIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrabajoActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrabajoActualizar.Designer.cs">
+      <DependentUpon>FrmTrabajoActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrabajoEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrabajoEliminar.Designer.cs">
+      <DependentUpon>FrmTrabajoEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrabajoIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrabajoIngresar.Designer.cs">
+      <DependentUpon>FrmTrabajoIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioActualizar.Designer.cs">
+      <DependentUpon>FrmUsuarioActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioEliminar.Designer.cs">
+      <DependentUpon>FrmUsuarioEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioIngresar.Designer.cs">
+      <DependentUpon>FrmUsuarioIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionesComplementarias.cs" />
+    <Compile Include="MDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.cs">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBuscarCliente.resx">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarUsuario.resx">
+      <DependentUpon>FrmBuscarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultasFactura.resx">
+      <DependentUpon>FrmConsultasFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProducto.resx">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoActualizar.resx">
+      <DependentUpon>FrmProductoActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoEliminar.resx">
+      <DependentUpon>FrmProductoEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoIngresar.resx">
+      <DependentUpon>FrmProductoIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteActualizar.resx">
+      <DependentUpon>FrmClienteActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteEliminar.resx">
+      <DependentUpon>FrmClienteEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteIngresar.resx">
+      <DependentUpon>FrmClienteIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrabajoActualizar.resx">
+      <DependentUpon>FrmTrabajoActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrabajoEliminar.resx">
+      <DependentUpon>FrmTrabajoEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrabajoIngresar.resx">
+      <DependentUpon>FrmTrabajoIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioActualizar.resx">
+      <DependentUpon>FrmUsuarioActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioEliminar.resx">
+      <DependentUpon>FrmUsuarioEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioIngresar.resx">
+      <DependentUpon>FrmUsuarioIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

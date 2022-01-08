@@ -1,0 +1,145 @@
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.pdb
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.Properties.Resources.resources
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+c:\users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.MDIPrincipal.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteEliminar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteIngresar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteActualizar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoActualizar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoEliminar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoIngresar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmFactura.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioActualizar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioEliminar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioIngresar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProducto.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\InputKey.dll
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoActualizar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoEliminar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoIngresar.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmLogin.resources
+C:\Users\sebastian\documents\visual studio 2010\Projects\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmReporte.resources
+C:\Users\sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\Users\sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+C:\Users\sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csprojResolveAssemblyReference.cache
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmFactura.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmLogin.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProducto.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoActualizar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoEliminar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoIngresar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteActualizar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteEliminar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteIngresar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmReporte.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoActualizar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoEliminar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoIngresar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioActualizar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioEliminar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioIngresar.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.MDIPrincipal.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.Properties.Resources.resources
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.GenerateResource.Cache
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.pdb
+C:\Users\Juan Sebastian\Documents\Universidad\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmConsultasFactura.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.pdb
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmConsultasFactura.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmFactura.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmLogin.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProducto.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoActualizar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoEliminar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoIngresar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteActualizar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteEliminar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteIngresar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmReporte.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoActualizar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoEliminar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoIngresar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioActualizar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioEliminar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioIngresar.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.MDIPrincipal.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.pdb
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csprojResolveAssemblyReference.cache
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmConsultasFactura.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmFactura.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmLogin.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProducto.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoActualizar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoEliminar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoIngresar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteActualizar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteEliminar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteIngresar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmReporte.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoActualizar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoEliminar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoIngresar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioActualizar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioEliminar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioIngresar.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.MDIPrincipal.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.Properties.Resources.resources
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.GenerateResource.Cache
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+C:\Users\Juan Sebastian\Desktop\Proyecto Informatico\5.Código Fuente\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.AssemblyReference.cache
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarCliente.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmBuscarUsuario.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmConsultasFactura.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmFactura.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmLogin.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProducto.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoActualizar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoEliminar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmProductoIngresar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteActualizar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteEliminar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmClienteIngresar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoActualizar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoEliminar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmTrabajoIngresar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioActualizar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioEliminar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmUsuarioIngresar.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.MDIPrincipal.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.Properties.Resources.resources
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.GenerateResource.cache
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.CoreCompileInputs.cache
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.exe
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.pdb
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe.config
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.exe
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\S.C.A.B.R.E.P.pdb

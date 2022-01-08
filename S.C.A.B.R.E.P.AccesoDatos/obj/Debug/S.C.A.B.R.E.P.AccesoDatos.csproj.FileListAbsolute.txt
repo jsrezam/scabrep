@@ -1,0 +1,6 @@
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\bin\Debug\S.C.A.B.R.E.P.AccesoDatos.dll
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\bin\Debug\S.C.A.B.R.E.P.AccesoDatos.pdb
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\obj\Debug\S.C.A.B.R.E.P.AccesoDatos.csproj.AssemblyReference.cache
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\obj\Debug\S.C.A.B.R.E.P.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\obj\Debug\S.C.A.B.R.E.P.AccesoDatos.dll
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P.AccesoDatos\obj\Debug\S.C.A.B.R.E.P.AccesoDatos.pdb
