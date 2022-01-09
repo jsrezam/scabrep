@@ -1,6 +1,7 @@
-﻿namespace S.C.A.B.R.E.P
+﻿
+namespace S.C.A.B.R.E.P
 {
-    partial class FrmReporte
+    partial class FrmReporteFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -29,32 +30,29 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.reporteFactura1 = new S.C.A.B.R.E.P.reporteFactura();
+            this.invoice1 = new S.C.A.B.R.E.P.Reportes.Invoice();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.reporteFactura1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(578, 262);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // FrmReporte
+            // FrmReporteFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 262);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FrmReporte";
-            this.Text = "Vista Preliminar";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmReporte_Load);
+            this.Name = "FrmReporteFactura";
+            this.Text = "FrmReporteFactura";
+            this.Load += new System.EventHandler(this.FrmReporteFactura_Load);
             this.ResumeLayout(false);
 
         }
@@ -62,6 +60,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private reporteFactura reporteFactura1;
+        private Reportes.Invoice invoice1;
     }
 }

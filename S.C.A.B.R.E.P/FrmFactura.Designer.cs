@@ -249,11 +249,12 @@ namespace S.C.A.B.R.E.P
             // 
             this.dtpFechaFactura.Checked = false;
             this.dtpFechaFactura.CustomFormat = "yyyy-dd-MM";
-            this.dtpFechaFactura.Location = new System.Drawing.Point(102, 9);
+            this.dtpFechaFactura.Location = new System.Drawing.Point(102, 12);
             this.dtpFechaFactura.Name = "dtpFechaFactura";
             this.dtpFechaFactura.Size = new System.Drawing.Size(195, 20);
             this.dtpFechaFactura.TabIndex = 1;
             this.dtpFechaFactura.Value = new System.DateTime(2022, 1, 7, 0, 0, 0, 0);
+            this.dtpFechaFactura.ValueChanged += new System.EventHandler(this.dtpFechaFactura_ValueChanged);
             // 
             // dgvNumeroFactura
             // 

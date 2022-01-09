@@ -1,0 +1,6 @@
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\bin\Debug\Scabrep.Datos.dll
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\bin\Debug\Scabrep.Datos.pdb
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\obj\Debug\Scabrep.Datos.csproj.AssemblyReference.cache
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\obj\Debug\Scabrep.Datos.csproj.CoreCompileInputs.cache
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\obj\Debug\Scabrep.Datos.dll
+C:\dev\S.C.A.B.R.E.P\Scabrep.Datos\obj\Debug\Scabrep.Datos.pdb

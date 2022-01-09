@@ -22,7 +22,10 @@ namespace S.C.A.B.R.E.P
         public string cedulaFacturaUsuario;
         public string nombreFacturaUsuario;
         public string apellidoFacturaUsuario;
-        public string passwordFacturaUsuario;        
+        public string passwordFacturaUsuario;
+        //variables factura
+        public bool esFechaActual = true;
+
 
         public FrmFactura(string nombreFacturaUsuario, string passwordFacturaUsuario)
         {
@@ -245,13 +248,16 @@ namespace S.C.A.B.R.E.P
         public void IngresarFactura()
         {
             Conexiones conexionFactura = new Conexiones();
+            var fechaFactura = (esFechaActual) ? DateTime.Now.ToLocalTime(): dtpFechaFactura.Value.ToLocalTime();
+            
             if (dgvNumeroFactura.RowCount == 0)
             {
-                conexionFactura.ingresoFactura(1,Convert.ToInt32(txtIdClienteFactura.Text.Trim()), Convert.ToInt32(txtIdUsuarioFactura.Text.Trim()), dtpFechaFactura.Value, Convert.ToDouble(txtSubTotalDoce.Text.Trim()), Convert.ToDouble(txtSubTotalCero.Text.Trim()), Convert.ToDouble(txtDescuento.Text.Trim()), Convert.ToDouble(txtSubTotal.Text.Trim()), Convert.ToDouble(txtIVA.Text.Trim()), Convert.ToDouble(txtValorTotal.Text.Trim()),"ACTIVA");
+                conexionFactura.ingresoFactura(1,Convert.ToInt32(txtIdClienteFactura.Text.Trim()), Convert.ToInt32(txtIdUsuarioFactura.Text.Trim()), fechaFactura, Convert.ToDouble(txtSubTotalDoce.Text.Trim()), Convert.ToDouble(txtSubTotalCero.Text.Trim()), Convert.ToDouble(txtDescuento.Text.Trim()), Convert.ToDouble(txtSubTotal.Text.Trim()), Convert.ToDouble(txtIVA.Text.Trim()), Convert.ToDouble(txtValorTotal.Text.Trim()),"ACTIVA");
             }
             else 
             {
-                conexionFactura.ingresoFactura(Convert.ToInt32(dgvNumeroFactura.Rows[0].Cells[0].Value), Convert.ToInt32(txtIdClienteFactura.Text.Trim()), Convert.ToInt32(txtIdUsuarioFactura.Text.Trim()), dtpFechaFactura.Value, Convert.ToDouble(txtSubTotalDoce.Text.Trim()), Convert.ToDouble(txtSubTotalCero.Text.Trim()), Convert.ToDouble(txtDescuento.Text.Trim()), Convert.ToDouble(txtSubTotal.Text.Trim()), Convert.ToDouble(txtIVA.Text.Trim()), Convert.ToDouble(txtValorTotal.Text.Trim()), "ACTIVA"); 
+                
+                conexionFactura.ingresoFactura(Convert.ToInt32(dgvNumeroFactura.Rows[0].Cells[0].Value), Convert.ToInt32(txtIdClienteFactura.Text.Trim()), Convert.ToInt32(txtIdUsuarioFactura.Text.Trim()), fechaFactura, Convert.ToDouble(txtSubTotalDoce.Text.Trim()), Convert.ToDouble(txtSubTotalCero.Text.Trim()), Convert.ToDouble(txtDescuento.Text.Trim()), Convert.ToDouble(txtSubTotal.Text.Trim()), Convert.ToDouble(txtIVA.Text.Trim()), Convert.ToDouble(txtValorTotal.Text.Trim()), "ACTIVA"); 
             }
         }
         
@@ -353,6 +359,11 @@ namespace S.C.A.B.R.E.P
         private void dgvProductoFactura_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
             calcular();
+        }
+
+        private void dtpFechaFactura_ValueChanged(object sender, EventArgs e)
+        {
+            esFechaActual = !esFechaActual;
         }
     }
 }

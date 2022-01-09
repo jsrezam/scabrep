@@ -123,6 +123,7 @@
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(200, 20);
             this.dtpFinal.TabIndex = 3;
+            this.dtpFinal.ValueChanged += new System.EventHandler(this.dtpFinal_ValueChanged);
             // 
             // label5
             // 
@@ -148,6 +149,7 @@
             this.dtpIncial.Name = "dtpIncial";
             this.dtpIncial.Size = new System.Drawing.Size(200, 20);
             this.dtpIncial.TabIndex = 0;
+            this.dtpIncial.ValueChanged += new System.EventHandler(this.dtpIncial_ValueChanged);
             // 
             // rBtnFechas
             // 

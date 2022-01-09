@@ -21,7 +21,9 @@ namespace S.C.A.B.R.E.P
         int ayudanteAnularIndice = 0;
         string ayudanteFechaInicial;
         string ayudanteFechaFinal;
-        
+        bool esFechaActualInicio = true;
+        bool esFechaActualFinal = true;
+
         private void rBtnCedula_CheckedChanged(object sender, EventArgs e)
         {
             txtCedulaCliente.Enabled = true;
@@ -227,9 +229,9 @@ namespace S.C.A.B.R.E.P
                         }
                         if (condicionVerificarIngresoEliminar == 5)
                         {
-                            ayudanteFechaInicial = dtpIncial.Value.Date.ToString("yyyy-MM-dd").Trim();
-                            ayudanteFechaFinal = dtpFinal.Value.Date.ToString("yyyy-MM-dd").Trim();
-                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA] from FACTURA A where A.FECHA_FACTURA BETWEEN '" + ayudanteFechaInicial + "' AND '"+ayudanteFechaFinal+"'", "FACTURA A");
+                            ayudanteFechaInicial = (esFechaActualInicio) ? DateTime.Now.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff").Trim() : dtpIncial.Value.Date.ToString("yyyy-MM-dd HH:mm:ss.fff").Trim();
+                            ayudanteFechaFinal = (esFechaActualFinal) ? DateTime.Now.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff").Trim() : dtpFinal.Value.Date.ToString("yyyy-MM-dd HH:mm:ss.fff").Trim();
+                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA] from FACTURA A where A.FECHA_FACTURA BETWEEN '" + ayudanteFechaInicial + "' AND '"+ayudanteFechaFinal+"' ORDER BY FECHA_FACTURA DESC ", "FACTURA A");
                             this.dgvBuscarCliente.DataSource = obconexionesEliminar.dataset.Tables["FACTURA A"];
                             this.dgvBuscarCliente.Refresh();
                         }
@@ -297,47 +299,17 @@ namespace S.C.A.B.R.E.P
         {
             if (numeroFactura != 0)
             {
-                verDetalles(numeroFactura);
+                using (var frmReporteFactura = new FrmReporteFactura(numeroFactura)) {
+                    frmReporteFactura.ShowDialog();
+                };
+                
                 numeroFactura = 0;
             }
             else 
             {
                 MessageBox.Show("Debe Elejir una factura para observar los detalles.\nRealize un click sobre las opciones de la lista generada por la busqueda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);   
             }
-        }
-
-        private void verDetalles(int numFactura)
-        {
-            //Conexiones reporte = new Conexiones();
-            string sql;
-            if (dgvBuscarCliente.RowCount == 0)
-            {
-                sql = "select * from FACTURA A INNER JOIN CLIENTE B ON A.ID_CLIENTE=B.ID_CLIENTE WHERE A.NUMERO_FACTURA =" + 1 + ";" + "select * from DETALLE_FACTURA_PRODUCTO A inner join PRODUCTO B on B.ID_PRODUCTO=A.ID_PRODUCTO where a.NUMERO_FACTURA=" + 1 + ";";
-            }
-            else
-            {
-                sql = "select * from FACTURA A INNER JOIN CLIENTE B ON A.ID_CLIENTE=B.ID_CLIENTE WHERE A.NUMERO_FACTURA =" + numFactura+ ";" + "select * from DETALLE_FACTURA_PRODUCTO A inner join PRODUCTO B on B.ID_PRODUCTO=A.ID_PRODUCTO where a.NUMERO_FACTURA=" + numFactura+ ";";
-            }
-            if (facuraDetallesConexion.consultarFactura(sql))
-            {
-                if (facuraDetallesConexion.dataset.Tables["FACTURA"].Rows.Count == 0)
-                {
-                    MessageBox.Show("No se encontro ningun registro");
-                }
-                else
-                {
-                    MessageBox.Show("Reporte Generado", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    System.IO.Directory.CreateDirectory(@"C:\XML");
-                    string url = @"C:\XML\FACTURA.xml";
-                    facuraDetallesConexion.dataset.WriteXml(url, XmlWriteMode.WriteSchema);
-                    //FrmReporte fReporte = new FrmReporte();
-                    //fReporte.ShowDialog();
-                }
-            }
-            //btnImprimirFactura.Enabled = false;
-            //btnNueva.Enabled = true;
-            //System.IO.Directory.Delete(@"C:\XML");
-        }
+        }        
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -494,6 +466,16 @@ namespace S.C.A.B.R.E.P
         public void anularFactura(int numFacturaAnular)
         {
             obconexionesEliminar.actualizar("FACTURA", "[SUBTOTALDOCEPORCIENTO_FACTURA] = " + 0 + ",[SUBTOTALCEROPORCIENTO_FACTURA]= " + 0 + ",[DESCUENTO_FACTURA]=" + 0 + ",[SUBTOTAL_FACTURA]=" + 0 + ",[IVA_FACTURA]=" + 0 + ",[TOTAL_FACTURA]=" + 0 + ",[ESTADO_FACTURA]='ANULADA'", " NUMERO_FACTURA= " + numFacturaAnular);
+        }
+
+        private void dtpIncial_ValueChanged(object sender, EventArgs e)
+        {
+            esFechaActualInicio = !esFechaActualInicio;
+        }
+
+        private void dtpFinal_ValueChanged(object sender, EventArgs e)
+        {
+            esFechaActualFinal = !esFechaActualFinal;
         }
     }
 }
