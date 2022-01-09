@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Data;
 using S.C.A.B.R.E.P.Properties;
+using System.Configuration;
 
 namespace S.C.A.B.R.E.P
 {
@@ -17,7 +18,8 @@ namespace S.C.A.B.R.E.P
 
         public static string ObtenerCadenaDeConexion()
         {
-            return Settings.Default.VentasConnectionString;
+            //return Settings.Default.VentasConnectionString;
+            return ConfigurationManager.AppSettings.Get("DefaultConnectionString");
         }
 
         private string cadena = ObtenerCadenaDeConexion();

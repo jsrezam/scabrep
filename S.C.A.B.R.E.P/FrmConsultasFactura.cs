@@ -205,19 +205,19 @@ namespace S.C.A.B.R.E.P
                     {
                         if (condicionVerificarIngresoEliminar == 1)
                         {
-                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND B.CEDULA_CLIENTE ='" + txtCedulaCliente.Text.Trim() + "'", "FACTURA A,CLIENTE B"); 
+                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND B.CEDULA_CLIENTE ='" + txtCedulaCliente.Text.Trim() + "' ORDER BY FECHA_FACTURA DESC ", "FACTURA A,CLIENTE B"); 
                             this.dgvBuscarCliente.DataSource = obconexionesEliminar.dataset.Tables["FACTURA A,CLIENTE B"];
                             this.dgvBuscarCliente.Refresh();
                         }
                         if (condicionVerificarIngresoEliminar == 2)
                         {
-                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND B.RUC_CLIENTE ='" + txtRucCliente.Text.Trim() + "'", "FACTURA A,CLIENTE B");
+                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND B.RUC_CLIENTE ='" + txtRucCliente.Text.Trim() + "' ORDER BY FECHA_FACTURA DESC ", "FACTURA A,CLIENTE B");
                             this.dgvBuscarCliente.DataSource = obconexionesEliminar.dataset.Tables["FACTURA A,CLIENTE B"];
                             this.dgvBuscarCliente.Refresh();
                         }
                         if (condicionVerificarIngresoEliminar == 3)
                         {
-                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND RTRIM(B.NOMBRE_CLIENTE) +'"+" '"+"+RTRIM(B.APELLIDO_CLIENTE) LIKE '%"+txtNombreCliente.Text.Trim() + "%'", "FACTURA A,CLIENTE B");
+                            obconexionesEliminar.consultar("select [NUMERO_FACTURA],[FECHA_FACTURA],[SUBTOTALDOCEPORCIENTO_FACTURA],[SUBTOTALCEROPORCIENTO_FACTURA],[DESCUENTO_FACTURA],[SUBTOTAL_FACTURA],[IVA_FACTURA],[TOTAL_FACTURA],[ESTADO_FACTURA]  from FACTURA A,CLIENTE B where A.ID_CLIENTE= B.ID_CLIENTE AND RTRIM(B.NOMBRE_CLIENTE) +'"+" '"+"+RTRIM(B.APELLIDO_CLIENTE) LIKE '%"+txtNombreCliente.Text.Trim() + "%' ORDER BY FECHA_FACTURA DESC ", "FACTURA A,CLIENTE B");
                             this.dgvBuscarCliente.DataSource = obconexionesEliminar.dataset.Tables["FACTURA A,CLIENTE B"];
                             this.dgvBuscarCliente.Refresh();
                         }

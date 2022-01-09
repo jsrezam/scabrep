@@ -165,3 +165,4 @@ C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.AssemblyRe
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.FrmReporteFactura.resources
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\Scabrep.Datos.dll
 C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\bin\Debug\Scabrep.Datos.pdb
+C:\dev\S.C.A.B.R.E.P\S.C.A.B.R.E.P\obj\x86\Debug\S.C.A.B.R.E.P.csproj.CopyComplete
